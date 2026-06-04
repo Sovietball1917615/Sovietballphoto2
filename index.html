@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ソビエトボールの写真記録室</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Yu Gothic", sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            height: 60vh;
+            background: url("images/banner.jpg") center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .header-content {
+            background: rgba(0,0,0,0.4);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            margin-top: 10px;
+        }
+
+        nav {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+            }
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            gap: 20px;
+        }
+
+        .photo {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+            .photo img {
+                width: 100%;
+                display: block;
+            }
+
+            .photo p {
+                padding: 15px;
+            }
+
+        .record {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>ソビエトボールの写真記録室</h1>
+            <p>鉄道・風景写真を記録する個人サイト</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="photos.html">鉄道写真(横)</a>
+        <a href="photostate.html">鉄道写真(縦)</a>
+        <a href="#records">風景写真(未完成)</a>
+        <a href="profile.html">プロフィール</a>
+    </nav>
+
+    <main>
+
+        <section id="gallery">
+            <h2>最新の写真</h2>
+
+            <div class="gallery">
+
+                <div class="photo">
+                    <img src="images/photo1.jpg" alt="">
+                    <p>E131系600番台 6両編成（岡本～宝積寺）</p>
+                </div>
+
+                <div class="photo">
+                    <img src="images/chiki.jpg" alt="日鉄チキ">
+                    <p>日鉄チキ那須塩原行（宇都宮～岡本）</p>
+                </div>
+
+                <div class="photo">
+                    <img src="images/photo3.jpg" alt="">
+                    <p>E531系K456編成 KY出場試運転（高久～黒磯）</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="records">
+            <h2>撮影記録</h2>
+
+            <div class="record">
+                <h3>2026年6月4日</h3>
+                <p>自治医大駅にて撮影。E131系、EV-E301系、貨物列車を記録。</p>
+            </div>
+
+            <div class="record">
+                <h3>2026年6月1日</h3>
+                <p>月の撮影。赤く見える月を観察。</p>
+            </div>
+
+        </section>
+
+        <section id="about">
+            <h2>プロフィール</h2>
+            <p>
+                栃木県を中心に活動する写真撮影愛好家。<br>
+                主に鉄道写真や風景写真を撮影しています。
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 ソビエトボールの写真記録室
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>写真館 - ソビエトボールの写真記録室</title>
+
+<style>
+
+body{
+    font-family: "Yu Gothic", sans-serif;
+    background:#f4f4f4;
+    margin:0;
+}
+
+header{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.gallery{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:20px;
+}
+
+.photo{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.photo img{
+    width:100%;
+    display:block;
+}
+
+.caption{
+    padding:15px;
+}
+
+.back{
+    text-align:center;
+    margin:30px;
+}
+
+.back a{
+    text-decoration:none;
+    color:#0066cc;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>写真館</h1>
+    <p>撮影した写真の記録</p>
+</header>
+
+<div class="gallery">
+
+    <div class="photo">
+        <img src="images/tate1.jpg" alt="E131系600番台">
+        <div class="caption">
+            <h3>トンネルから飛び出すE131系600番台</h3>
+            <p>宇都宮線 野崎～矢板間にて撮影 (2026/5/30)</p>
+        </div>
+    </div>
+
+    <div class="photo">
+        <img src="images/tate2.jpg" alt="EF210の訓練">
+        <div class="caption">
+            <h3>EF210-107の乗務員訓練</h3>
+            <p>宇都宮線 宇都宮～岡本間にて撮影 (2026/2/17)</p>
+        </div>
+    </div>
+
+    <div class="photo">
+        <img src="images/tate3.jpg" alt="EF65">
+        <div class="caption">
+            <h3>EF65-2080 8593レ 単機</h3>
+            <p>宇都宮線 自治医大駅にて撮影 (2026/2/7)</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="back">
+    <a href="index.html">トップページへ戻る</a>
+</div>
+
+</body>
+</html>

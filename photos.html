@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>写真館 - ソビエトボールの写真記録室</title>
+
+<style>
+
+body{
+    font-family: "Yu Gothic", sans-serif;
+    background:#f4f4f4;
+    margin:0;
+}
+
+header{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.gallery{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:20px;
+}
+
+.photo{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.photo img{
+    width:100%;
+    display:block;
+}
+
+.caption{
+    padding:15px;
+}
+
+.back{
+    text-align:center;
+    margin:30px;
+}
+
+.back a{
+    text-decoration:none;
+    color:#0066cc;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>写真館</h1>
+    <p>撮影した写真の記録</p>
+</header>
+
+<div class="gallery">
+
+    <div class="photo">
+        <img src="images/photo1.jpg" alt="E131系600番台">
+        <div class="caption">
+            <h3>E131系600番台</h3>
+            <p>宇都宮線 岡本～宝積寺間にて撮影 (2026/6/5)</p>
+        </div>
+    </div>
+
+    <div class="photo">
+        <img src="images/chiki.jpg" alt="日鉄チキ">
+        <div class="caption">
+            <h3>日鉄チキ 那須塩原行</h3>
+            <p>宇都宮線 宇都宮～岡本間にて撮影 (2026/6/5)</p>
+        </div>
+    </div>
+
+    <div class="photo">
+        <img src="images/photo3.jpg" alt="EF65">
+        <div class="caption">
+            <h3>E531系 K456編成 KY出場試運転</h3>
+            <p>東北本線 高久～黒磯間にて撮影 (2026/5/26)</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="back">
+    <a href="index.html">トップページへ戻る</a>
+</div>
+
+</body>
+</html>
