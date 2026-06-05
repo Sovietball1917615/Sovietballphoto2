@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>写真館 - ソビエトボールの写真記録室</title>
+
+<style>
+
+body{
+    font-family: "Yu Gothic", sans-serif;
+    background:#f4f4f4;
+    margin:0;
+}
+
+header{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.gallery{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:20px;
+}
+
+.photo{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.photo img{
+    width:100%;
+    display:block;
+}
+
+.caption{
+    padding:15px;
+}
+
+.back{
+    text-align:center;
+    margin:30px;
+}
+
+.back a{
+    text-decoration:none;
+    color:#0066cc;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>写真館</h1>
+    <p>撮影した写真の記録</p>
+</header>
+
+<div class="gallery">
+
+    <div class="photo">
+        <a href="images/fukei4.jpg" target="_blank">
+            <img src="images/fukei4.jpg" alt="明治神宮">
+        </a>
+        <div class="caption">
+            <h3>明治天皇陛下が祀られている地 明治神宮</h3>
+            <p>2026/5/5</p>
+        </div>
+    </div>
+
+    <div class="photo">
+        <a href="images/fukei1.jpg" target="_blank">
+            <img src="images/fukei1.jpg" alt="Hakuba">
+        </a>
+        <div class="caption">
+            <h3>白馬の美しい山脈</h3>
+            <p>2026/5/2</p>
+        </div>
+    </div>
+
+    <div class="photo">
+        <a href="images/fukei2.jpg" target="_blank">
+            <img src="images/fukei2.jpg" alt="Amami Materiya">
+        </a>
+        <div class="caption">
+            <h3>奄美大島の山奥に流れる美しい滝 マテリヤの滝</h3>
+            <p>2026/3/25</p>
+        </div>
+    </div>
+
+    <div class="photo">
+        <a href="images/fukei5.jpg" target="_blank">
+            <img src="images/fukei5.jpg" alt="Fuji Mt">
+        </a>
+        <div class="caption">
+            <h3>富士川SAから見る富士山</h3>
+            <p>2026/3/22</p>
+        </div>
+    </div>
+
+    <div class="photo">
+        <a href="images/fukei3.jpg" target="_blank">
+            <img src="images/fukei3.jpg" alt="Hikone">
+        </a>
+        <div class="caption">
+            <h3>梅の花？と彦根城</h3>
+            <p>2026/3/21</p>
+        </div>
+    </div>
+
+    <div class="photo">
+        <a href="images/fukei6.jpg" target="_blank">
+            <img src="images/fukei6.jpg" alt="Kinkakuji">
+        </a>
+        <div class="caption">
+            <h3>水に反射する金閣寺</h3>
+            <p>2025/12/18</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="back">
+    <a href="index.html">トップページへ戻る</a>
+</div>
+
+</body>
+</html>
